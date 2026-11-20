@@ -9,9 +9,11 @@
         "ilib": "^14.6.2",
         "react": "^16.14.0",
         "react-dom": "^16.14.0",
+        "react-app-polyfill": "^2.0.0",
         "react-scripts": "^4.0.1"
     },
     "scripts": {
+        "prebuild": "node scripts/copy-ilib.js",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",

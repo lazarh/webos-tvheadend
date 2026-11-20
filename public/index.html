@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <title>WebOS TVheadend Client</title>
+        <script>
+            // webOS 3.x (Chromium 38) compatibility:
+            // - ilib locale data lives in <appdir>/ilib/locale (see scripts/copy-ilib.js)
+            // - paths must be RELATIVE so they resolve against this file:// document
+            window.ILIB_BASE_PATH = 'ilib';
+            window.ILIB_RESOURCES_PATH = 'ilib/locale';
+        </script>
     </head>
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
